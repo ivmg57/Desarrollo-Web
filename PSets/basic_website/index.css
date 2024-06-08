@@ -1,0 +1,83 @@
+header h1, header h2, article p {
+    text-align: justify;
+    margin: 20px auto;
+    width: 80%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+header h1, header h2 {
+    color: #333;
+    margin: 20px auto;
+    width: 40%;
+}
+
+article p {
+    margin: 20px auto;
+    width: 40%;
+}
+
+nav {
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+}
+
+nav strong {
+    display: block;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul ul {
+    padding-left: 20px;
+}
+
+nav li {
+    margin: 5px 0;
+}
+
+nav a {
+    text-decoration: underline;
+    color: black;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+section h2, section h3 {
+    text-align: justify;
+    margin: 20px auto;
+    width: 40%;
+}
+
+section p {
+    text-align: justify;
+    margin: 20px auto;
+    width: 40%;
+}

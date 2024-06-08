@@ -1,0 +1,176 @@
+/* Variables CSS para colores, tipografías y tamaños */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #2980b9;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --border-color: #ddd;
+    --margin-size: 20px;
+    --padding-size: 10px;
+    --width-content: 60%;
+    --width-responsive: 90%;
+    --font-family: 'Open Sans', Arial, sans-serif;
+    --header-font-family: 'Roboto', Arial, sans-serif;
+    --base-font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Layout del contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--margin-size);
+}
+
+/* Alineación de contenedores principales */
+header, nav, article, section {
+    width: var(--width-content);
+    max-width: 100%;
+    margin: var(--margin-size) auto;
+}
+
+/* Estilo del header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1, header h2 {
+    font-family: var(--header-font-family);
+    margin: var(--margin-size) 0;
+}
+
+/* Estilo de los artículos y secciones */
+article, section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: var(--padding-size);
+}
+
+/* Textos alineados */
+header h1, header h2,
+section h2, section h3,
+article p, section p,
+section code, section pre {
+    text-align: justify;
+    margin: var(--margin-size) auto;
+}
+
+/* Estilo de las imágenes */
+img {
+    height: auto;
+    display: block;
+    margin: var(--margin-size) auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Estilo del figcaption */
+figcaption {
+    font-style: italic;
+    margin-bottom: var(--margin-size);
+    text-align: center;
+}
+
+/* Estilo de la navegación */
+nav {
+    background-color: var(--secondary-color);
+    padding: var(--padding-size);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: var(--padding-size);
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+table {
+    margin: var(--margin-size) auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: var(--padding-size);
+}
+
+/* Estilo de las listas */
+section ul, section ol {
+    list-style: none;
+    padding: 0;
+    margin: var(--margin-size) auto;
+}
+
+section ul li, section ol li {
+    text-align: justify;
+    margin: 10px 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    list-style: none;
+    position: relative;
+}
+
+section ul li:before, section ol li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    text-indent: 0;
+}
+
+/* Estilo para elementos <code> y <pre> en secciones */
+section code, section pre {
+    display: block;
+    padding: var(--padding-size);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    border-radius: 4px;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    header, nav, article, section {
+        width: var(--width-responsive);
+    }
+}

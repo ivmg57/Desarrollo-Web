@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>The Math Behind Neural Networks</h1>
+    <h2>Dive into Neural Networks, the backbone of modern AI, understand its mathematics, implement it from scratch, and explore its applications</h2>
+</header>
+
+<section>
+    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*lYCxlGeLK2scQE2L" alt="Descripción de la imagen">
+    <figcaption>Image by DALL-E</figcaption>
+</section>
+
+<article>
+    <p>Neural networks are at the core of artificial intelligence (AI), fueling a variety of applications from spotting objects in photos to translating languages. In this article, we’ll dive into what neural networks are, how they work, and why they’re a big deal in our technology-driven world today.</p>
+</article>
+
+<nav>
+    <strong>Índice</strong>
+    <ul>
+        <li><a href="#basics">1: Understanding the Basics</a>
+            <ul>
+                <li><a href="#neural-networks">1.1: What are Neural Networks?</a></li>
+                <li><a href="#types-neural-networks">1.2: Types of Neural Networks</a></li>
+            </ul>
+        </li>
+        <li><a href="#architecture-neural-networks">2: The Architecture of Neural Networks</a>
+            <ul>
+                <li><a href="#structure-neuron">2.1: The Structure of a Neuron</a></li>
+                <li><a href="#layers">2.2: Layers</a></li>
+                <li><a href="#role-layers">2.3: The Role of Layers in Learning</a></li>
+            </ul>
+        </li>
+        <li><a href="#math-neural-networks">3: The Mathematics of Neural Networks</a>
+            <ul>
+                <li><a href="#weighted-sum">3.1: Weighted Sum</a></li>
+                <li><a href="#activation-functions">3.2: Activation Functions</a></li>
+                <li><a href="#core-neural-learning">3.3: Backpropagation: The Core of Neural Learning</a></li>
+                <li><a href="#step-by-step">3.4: Step by Step example</a></li>
+                <li><a href="#improvements">3.5: Improvements</a></li>
+            </ul>
+        </li>
+        <li><a href="#implementing-neural-networks">4: Implementing Neural Networks</a>
+            <ul>
+                <li><a href="#simple-neural-network">4.1: Building a Simple Neural Network in Python</a></li>
+                <li><a href="#libraries-neural-network">4.2: Utilizing Libraries for Neural Network Implementation (TensorFlow)</a></li>
+            </ul>
+        </li>
+        <li><a href="#challenges">5: Challenges</a>
+            <ul>
+                <li><a href="#overcoming-overfitting">5.1: Overcoming Overfitting</a></li>
+            </ul>
+        </li>
+        <li><a href="#conclusion">6: Conclusion</a></li>
+    </ul>
+</nav>
+
+<section id="basics">
+    <h2>1: Understanding the Basics</h2>
+    <section id="neural-networks">
+        <h3>1.1: What are Neural Networks?</h3>
+        <p>Neural networks are a cool blend of biology and computer science, inspired by our brain’s setup to tackle complicated computing tasks. Essentially, they’re algorithms designed to spot patterns and make sense of sensory data, which lets them do a ton of stuff like recognizing faces, understanding spoken words, making predictions, and understanding natural language.</p>
+    </section>
+    <section id="types-neural-networks">
+        <h3>1.2: Types of Neural Networks</h3>
+        <p>Before diving into their structure and math, let’s take a look at the most popular types of Neural Networks we may find today. This will give us a better understanding of their potential and capabilities.</p>
+    </section>
+</section>
+
+<section id="#architecture-neural-networks">
+    <h2>2: The Architecture of Neural Networks</h2>
+    <section id="structure-neuron">
+        <h3>2.1: The Structure of a Neuron</h3>
+        <p>A neuron gets its input either directly from the data we’re interested in or from the outputs of other neurons. These inputs are like a list, with each item on the list representing a different characteristic of the data.</p>
+    </section>
+    <section id="layers">
+        <h3>2.2: Layers</h3>
+        <p>Neural networks are structured in layers, sort of like a layered cake, with each layer made up of multiple neurons. The way these layers stack up forms the network’s architecture.</p>
+    </section>
+    <section id="role-layers">
+        <h3>2.3: The Role of Layers in Learning</h3>
+        <p>The hidden layers are the network’s feature detectives. As data moves through these layers, the network gets better at spotting and combining input features, layering them into a more complex understanding of the data.</p>
+    </section>
+</section>
+
+<section id="math-neural-networks">
+    <h2>3: The Mathematics of Neural Networks</h2>
+    <section id="weighted-sum">
+        <h3>3.1: Weighted Sum</h3>
+        <p>The first step in the neural computation process involves aggregating the inputs to a neuron, each multiplied by their respective weights, and then adding a bias term. This operation is known as the weighted sum or linear combination.</p>
+    </section>
+    <section id="activation-functions">
+        <h3>3.2: Activation Functions</h3>
+        <p>As we said before, activation functions play a pivotal role in determining the output of a neural network. They are mathematical equations that determine whether a neuron should be activated or not. Activation functions introduce non-linear properties to the network, enabling it to learn complex data patterns and perform tasks beyond mere linear classification, which is essential for deep learning models.</p>
+    </section>
+    <section id="core-neural-learning">
+        <h3>3.3: Backpropagation: The Core of Neural Learning</h3>
+        <p>Backpropagation, short for “backward propagation of errors,” is a method for efficiently calculating the gradient of the loss function concerning all weights in the network. It consists of two main phases: a forward pass, where the input data is passed through the network to generate an output, and a backward pass, where the output is compared to the target value, and the error is propagated back through the network to update the weights.</p>
+    </section>
+    <section id="step-by-step">
+        <h3>3.4: Step by Step example</h3>
+        <p>Let’s explore an example involving backpropagation and gradient descent in a simple neural network. This neural network will have a single hidden layer. We’ll work through a single iteration of training with one data point to understand how these processes update the network’s weights.</p>
+    </section>
+    <section id="improvements">
+        <h3>3.5: Improvements</h3>
+        <p>While the basic idea of Gradient Descent is simple — take small steps in the direction that reduces error the most — several tweaks and improvements have been made to this method to enhance its efficiency and effectiveness.</p>
+    </section>
+</section>
+
+<section id="implementing-neural-networks">
+    <h2>4: Implementing Neural Networks</h2>
+    <section id="simple-neural-network">
+        <h3>4.1: Building a Simple Neural Network in Python</h3>
+        <p>Let’s finally recreate a neural network from scratch. For better readability, I will divide the code into 4 parts: NeuralNetwork class, Trainer class, and implementation.</p>
+    </section>
+    <section id="libraries-neural-network">
+        <h3>4.2: Utilizing Libraries for Neural Network Implementation (TensorFlow)</h3>
+        <p>Well, that was a lot! Luckily for us, we don’t need to write such a long code every time we want to work with NNs. We can leverage libraries such as Tensorflow and PyTorch which will create Deep Learning models for us with minimum code. In this example, we will create and explain a TensorFlow version of training a neural network on the digits dataset, similar to the process described previously.</p>
+    </section>
+</section>
+
+<section id="challenges">
+    <h2>5: Challenges</h2>
+    <section id="overcoming-overfitting">
+        <h3>5.1: Overcoming Overfitting</h3>
+        <p>Overfitting is like when a neural network becomes a bit too obsessed with its training data, picking up on all the tiny details and noise, to the point where it struggles to handle new, unseen data. It’s like studying so hard for your exams by memorizing the textbook word for word but then not being able to apply what you’ve learned to any question that’s phrased differently. This problem can hold back a model’s ability to perform well in real-world situations, where being able to generalize or apply what it’s learned to new scenarios, is key. Luckily, there are several clever techniques to help prevent or lessen overfitting, making our models more versatile and ready for the real world. Let’s take a look at a few of them, but don’t worry about mastering all of them now as I will cover anti-overfitting techniques in a separate article.</p>
+    </section>
+</section>
+
+<section id="conclusion">
+    <h2>6: Conclusion</h2>
+    <p>Diving into the world of neural networks opens our eyes to the incredible potential these models hold within the realm of artificial intelligence. Starting with the basics, like how neural networks use weighted sums and activation functions to process information, we’ve seen how techniques like backpropagation and gradient descent empower them to learn from data. Especially in areas like image recognition, we’ve witnessed firsthand how neural networks are solving complex challenges and pushing technology forward.</p>
+</section>
+
+</body>
+</html>

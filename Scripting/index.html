@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desarrollo Web</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>Desarrollo Web</h1>
+    <h2>Guía Completa</h2>
+</header>
+
+<section>
+    <img src="https://www.nexeinformatica.com/wp-content/uploads/2019/05/Que-diferencia-hay-entre-desarrollo-web-y-diseno-web.jpg" alt="Descripción de la imagen">
+    <figcaption>Desarrollo Web</figcaption>
+</section>
+
+<article>
+    <p>Esta guía completa de desarrollo web abarca una amplia gama de temas esenciales para la creación y gestión de aplicaciones web modernas. Exploraremos desde los fundamentos de HTML y CSS, pasando por JavaScript y sus aplicaciones avanzadas con React, hasta la integración de Node.js, Express y PostgreSQL para el desarrollo del lado del servidor.</p>
+</article>
+
+<nav>
+    <strong>Índice</strong>
+    <ul>
+        <li><a href="#valores">1: Valores en JavaScript</a>
+            <ul>
+                <li><a href="#numeros">1.1: Números</a></li>
+                <li><a href="#operadores-aritmeticos">1.2: Operadores Aritméticos</a></li>
+                <li><a href="#strings">1.3: Strings (Cadenas de Texto)</a></li>
+                <li><a href="#operaciones-con-strings">1.4: Operaciones con Strings</a></li>
+                <li><a href="#valores-booleanos">1.5: Valores Booleanos</a></li>
+            </ul>
+        </li>
+        <li><a href="#operadores-logicos">2: Operadores Lógicos</a>
+            <ul>
+                <li><a href="#and">2.1: AND (&&)</a></li>
+                <li><a href="#or">2.2: OR (||)</a></li>
+                <li><a href="#not">2.3: NOT (!)</a></li>
+                <li><a href="#operador-ternario">2.4: Operador Ternario (?:)</a></li>
+                <li><a href="#cortocircuito">2.5: Cortocircuito de Operadores Lógicos</a></li>
+                <li><a href="#fusion-nula">2.6: Operador de Fusión Nula (??)</a></li>
+            </ul>
+        </li>
+        <li><a href="#funciones">3: Funciones</a></li>
+        <li><a href="#expresiones-regulares">4: Expresiones Regulares (REGEX)</a></li>
+        <li><a href="#switch">5: Declaración Switch</a></li>
+        <li><a href="#html-css">6: HTML y CSS</a>
+            <ul>
+                <li><a href="#html">6.1: HTML: Estructura y Marcado de Páginas Web</a>
+                    <ul>
+                        <li><a href="#que-es-html">6.1.1: ¿Qué es HTML?</a></li>
+                        <li><a href="#estructura">6.1.2: Cómo Utilizan las Páginas la Estructura</a></li>
+                        <li><a href="#etiquetas">6.1.3: Etiquetas (Tags)</a></li>
+                        <li><a href="#elementos-principales">6.1.4: Elementos Principales: &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;title&gt;</a></li>
+                        <li><a href="#encabezados">6.1.5: Encabezados: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, ...</a></li>
+                        <li><a href="#parrafos-negrita">6.1.6: Párrafos y Texto en Negrita: &lt;p&gt;, &lt;b&gt;</a></li>
+                        <li><a href="#saltos-linea">6.1.7: Saltos de Línea y Reglas Horizontales: &lt;br&gt;, &lt;hr&gt;</a></li>
+                        <li><a href="#listas">6.1.8: Listas: Ordenadas, Desordenadas y de Definición</a></li>
+                        <li><a href="#enlaces">6.1.9: Enlaces: &lt;a&gt;</a></li>
+                        <li><a href="#identificadores-anclas">6.1.10: Identificadores y Anclas: `id` y enlaces internos</a></li>
+                        <li><a href="#imagenes">6.1.11: Imágenes: &lt;img&gt;</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+            <ul>
+                <li><a href="#css">6.2: CSS: Diseño y Estilo de Páginas Web</a>
+                    <ul>
+                        <li><a href="#introduccion-css">6.2.1: Introducción a CSS</a></li>
+                        <li><a href="#caja-css">6.2.2: Concepto de Caja en CSS</a></li>
+                        <li><a href="#css-externo">6.2.3: Uso de CSS Externo</a></li>
+                        <li><a href="#propiedades-css">6.2.4: Propiedades CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#estructura-programas">7: Estructura de Programas en JavaScript</a>
+            <ul>
+                <li><a href="#bindings-variables">7.1: Bindings o Variables</a>
+                    <ul>
+                        <li><a href="#que-es-binding">7.1.1: ¿Qué es un Binding?</a></li>
+                        <li><a href="#uso-actualizacion">7.1.2: Uso y Actualización de Bindings</a></li>
+                    </ul>
+                </li>
+                <li><a href="#flujo-control">7.2: Flujo de Control</a>
+                    <ul>
+                        <li><a href="#ejecucion-condicional">7.2.1: Ejecución Condicional</a></li>
+                    </ul>
+                </li>
+                <li><a href="#bucles">7.3: Bucles (Loops)</a>
+                    <ul>
+                        <li><a href="#while-loops">7.3.1: While Loops</a></li>
+                        <li><a href="#for-loops">7.3.2: For Loops</a></li>
+                    </ul>
+                </li>
+                <li><a href="#switch">7.4: Switch</a></li>
+            </ul>
+        </li>
+        <li><a href="#react-hooks-jsx">8: React, Hooks, y JSX</a>
+            <ul>
+                <li><a href="#estructuras-datos">8.1: Estructuras de Datos: Objetos y Arreglos</a>
+                    <ul>
+                        <li><a href="#arreglos">8.1.1: Arreglos (Arrays)</a></li>
+                        <li><a href="#metodos-arreglos">8.1.2: Métodos de Arreglos</a></li>
+                        <li><a href="#objetos">8.1.3: Objetos (Objects)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#react">8.2: React</a>
+                    <ul>
+                        <li><a href="#componentes">8.2.1: Componentes</a></li>
+                        <li><a href="#jsx">8.2.2: JSX</a></li>
+                        <li><a href="#listas-condicionales">8.2.3: Listas y Condicionales</a></li>
+                    </ul>
+                </li>
+                <li><a href="#hooks">8.3: Hooks</a>
+                    <ul>
+                        <li><a href="#usestate">8.3.1: Hook de Estado: useState</a></li>
+                        <li><a href="#useeffect">8.3.2: Hook de Efecto: useEffect</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#rutas-fetch-http-urls">9: Rutas, Fetch, Métodos HTTP y Anatomía de URLs</a>
+            <ul>
+                <li><a href="#fetch">9.1: Fetch</a>
+                    <ul>
+                        <li><a href="#uso-basico-fetch">9.1.1: Uso Básico de Fetch</a></li>
+                        <li><a href="#opciones-solicitud">9.1.2: Opciones de Solicitud</a></li>
+                    </ul>
+                </li>
+                <li><a href="#metodos-http">9.2: Métodos HTTP</a>
+                    <ul>
+                        <li><a href="#get">9.2.1: GET</a></li>
+                        <li><a href="#post">9.2.2: POST</a></li>
+                        <li><a href="#put">9.2.3: PUT</a></li>
+                        <li><a href="#patch">9.2.4: PATCH</a></li>
+                        <li><a href="#delete">9.2.5: DELETE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#anatomia-urls">9.3: Anatomía de URLs</a>
+                    <ul>
+                        <li><a href="#estructura-url">9.3.1: Estructura de una URL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#rutas-react">9.4: Rutas en React</a></li>
+            </ul>
+        </li>
+        <li><a href="#node-express">10: Node y Express</a>
+            <ul>
+                <li><a href="#nodejs">10.1: Node.js</a>
+                    <ul>
+                        <li><a href="#que-es-nodejs">10.1.1: ¿Qué es Node.js?</a></li>
+                        <li><a href="#ventajas-nodejs">10.1.2: Ventajas de Node.js</a></li>
+                        <li><a href="#limitaciones-nodejs">10.1.3: Limitaciones de Node.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#expressjs">10.2: Express.js</a>
+                    <ul>
+                        <li><a href="#que-es-expressjs">10.2.1: ¿Qué es Express.js?</a></li>
+                        <li><a href="#caracteristicas-expressjs">10.2.2: Características de Express.js</a></li>
+                        <li><a href="#ejemplo-basico-express">10.2.3: Ejemplo Básico de Express</a></li>
+                        <li><a href="#aplicaciones-dinamicas">10.2.4: Node.js y Express en Aplicaciones Dinámicas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#postgresql">10.3: PostgreSQL</a></li>
+                <li><a href="#postman">10.4: Postman</a></li>
+            </ul>
+        </li>
+        <li><a href="#node-express-postgresql">11: Node, Express y PostgreSQL</a>
+            <ul>
+                <li><a href="#postgresql">11.1: PostgreSQL</a>
+                    <ul>
+                        <li><a href="#que-es-postgresql">11.1.1: ¿Qué es PostgreSQL?</a></li>
+                        <li><a href="#caracteristicas-postgresql">11.1.2: Características de PostgreSQL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#node-postgres">11.2: Node-postgres (pg)</a>
+                    <ul>
+                        <li><a href="#que-es-node-postgres">11.2.1: ¿Qué es node-postgres?</a></li>
+                        <li><a href="#caracteristicas-node-postgres">11.2.2: Características de node-postgres</a></li>
+                        <li><a href="#uso-terminal-psql">11.2.3: Uso del terminal de PostgreSQL (psql)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#configuracion-postgresql">11.3: Configuración de PostgreSQL</a>
+                    <ul>
+                        <li><a href="#crear-rol">11.3.1: Crear un rol en PostgreSQL</a></li>
+                        <li><a href="#crear-base-datos">11.3.2: Crear una base de datos</a></li>
+                        <li><a href="#crear-tabla">11.3.3: Crear una tabla</a></li>
+                        <li><a href="#insertar-datos">11.3.4: Insertar datos en la tabla</a></li>
+                    </ul>
+                </li>
+                <li><a href="#servidor-express">11.4: Configuración de un servidor Express</a>
+                    <ul>
+                        <li><a href="#instalacion-dependencias">11.4.1: Instalación de dependencias</a></li>
+                        <li><a href="#configuracion-basica">11.4.2: Configuración básica del servidor Express</a></li>
+                        <li><a href="#conexion-postgresql">11.4.3: Conexión a PostgreSQL con node-postgres</a></li>
+                        <li><a href="#rutas-controladores">11.4.4: Rutas y controladores en Express</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+                
+    </ul>
+</nav>
+
+<section id="valores">
+    <h2>Valores en JavaScript</h2>
+
+    <h3 id="numeros">Números</h3>
+    <p>En JavaScript, los valores numéricos son de tipo `number`. Este tipo incluye tanto números enteros como decimales. Por ejemplo, el número 13 es de tipo `number`.</p>
+
+    <h3 id="operadores-aritmeticos">Operadores Aritméticos</h3>
+    <p>JavaScript permite realizar operaciones aritméticas usando operadores como `+`, `-`, `*`, y `/`. La precedencia de estos operadores determina el orden en que se realizan las operaciones en una expresión.</p>
+    <pre><code>100 + 4 * 11 = 144</code></pre>
+    <p>En esta expresión, la multiplicación se realiza antes que la suma debido a la precedencia de los operadores. Los operadores `/` y `*` tienen la misma precedencia, al igual que `+` y `-`. Cuando hay múltiples operadores con la misma precedencia, se aplican de izquierda a derecha.</p>
+    <pre><code>1 - 2 + 1 = 0 // (1 - 2) + 1</code></pre>
+
+    <h3 id="strings">Strings (Cadenas de Texto)</h3>
+    <p>Las cadenas de texto, o strings, se utilizan para representar texto y se escriben encerrándolas entre comillas simples (`'`), dobles (`"`), o backticks (```).</p>
+    <pre><code>'Down on the sea'
+"Lie on the ocean"
+`Float on the ocean`</code></pre>
+
+    <h3 id="operaciones-con-strings">Operaciones con Strings</h3>
+    <p>A diferencia de los números, las cadenas no pueden ser divididas, multiplicadas o restadas. Sin embargo, se pueden concatenar usando el operador `+`.</p>
+    <pre><code>"con" + "cat" + "e" + "nate" = "concatenate"</code></pre>
+    <p>Las cadenas delimitadas por backticks, conocidas como literales de plantilla (template literals), permiten incluir expresiones dentro de la cadena usando `${}`.</p>
+    <pre><code>`half of 100 is ${100 / 2}` // "half of 100 is 50"</code></pre>
+
+    <h3 id="valores-booleanos">Valores Booleanos</h3>
+    <p>Los valores booleanos representan dos estados posibles: `true` (verdadero) o `false` (falso). Estos son útiles para realizar comparaciones y tomar decisiones en el código.</p>
+    <pre><code>3 > 2  // true
+3 < 2  // false
+"Garnet" != "Ruby"  // true
+"Pearl" == "Amethyst"  // false</code></pre>
+</section>
+
+<section id="operadores-logicos">
+    <h2>Operadores Lógicos</h2>
+    <p>JavaScript soporta tres operadores lógicos principales: `&&` (AND), `||` (OR), y `!` (NOT). Estos operadores permiten realizar operaciones lógicas sobre valores booleanos.</p>
+
+    <h3 id="and">AND (&&)</h3>
+    <p>El operador `&&` produce `true` solo si ambos operandos son `true`.</p>
+    <pre><code>true && false  // false
+true && true  // true</code></pre>
+
+    <h3 id="or">OR (||)</h3>
+    <p>El operador `||` produce `true` si al menos uno de los operandos es `true`.</p>
+    <pre><code>false || true  // true
+false || false  // false</code></pre>
+
+    <h3 id="not">NOT (!)</h3>
+    <p>El operador `!` invierte el valor booleano de su operando.</p>
+    <pre><code>!true  // false
+!false  // true</code></pre>
+
+    <h3 id="operador-ternario">Operador Ternario (?:)</h3>
+    <p>El operador ternario selecciona uno de dos valores basándose en una condición.</p>
+    <pre><code>true ? 1 : 2  // 1
+false ? 1 : 2  // 2</code></pre>
+
+    <h3 id="cortocircuito">Cortocircuito de Operadores Lógicos</h3>
+    <p>Los operadores lógicos `&&` y `||` pueden devolver el valor original del operando dependiendo del resultado de la conversión a booleano.</p>
+    <pre><code>null || "user"  // "user"
+"Agnes" || "user"  // "Agnes"</code></pre>
+    <p>Valores como `0`, `NaN`, y la cadena vacía `""` se consideran `false`, mientras que otros valores se consideran `true`.</p>
+
+    <h3 id="fusion-nula">Operador de Fusión Nula (??)</h3>
+    <p>El operador `??` devuelve el valor de la derecha solo si el valor de la izquierda es `null` o `undefined`.</p>
+    <pre><code>0 || 100  // 100
+0 ?? 100  // 0
+null ?? 100  // 100</code></pre>
+</section>
+
+<section id="funciones">
+    <h2>Funciones</h2>
+    <p>Las funciones son bloques de código que realizan una tarea específica. Se pueden definir usando la palabra clave `function` y se pueden llamar por su nombre.</p>
+    <pre><code>const square = function(x) {
+  return x * x;
+};
+
+console.log(square(12));  // 144</code></pre>
+    <p>Las funciones ayudan a estructurar programas grandes, reducir la repetición, y asociar nombres con subprogramas.</p>
+</section>
+
+<section id="expresiones-regulares">
+    <h2>Expresiones Regulares (REGEX)</h2>
+    <p>Las expresiones regulares son patrones utilizados para buscar coincidencias dentro de cadenas de texto. Un ejemplo de REGEX en JavaScript es `/(\\+|-\\x||\\/)/`, que coincide con los caracteres `+`, `-`, `x`, o `/`.</p>
+    <p>Explicación de la REGEX:</p>
+    <ul>
+        <li>`/`: Inicio de la expresión regular.</li>
+        <li>`()`: Agrupamiento de opciones.</li>
+        <li>`\\+`, `\\-`, `\\x`, `\\/`: Caracteres a coincidir, escapados para evitar su significado especial.</li>
+        <li>`|`: Operador "o", indicando opciones posibles.</li>
+        <li>`/`: Final de la expresión regular.</li>
+    </ul>
+</section>
+
+<section id="switch">
+    <h2>Declaración Switch</h2>
+    <p>La declaración `switch` evalúa una expresión y ejecuta el bloque de código correspondiente al caso que coincida con el valor de la expresión. Si no hay coincidencia, se ejecuta el bloque `default`.</p>
+    <pre><code>switch(expression) {
+  case value1:
+    // código a ejecutar
+    break;
+  case value2:
+    // código a ejecutar
+    break;
+  default:
+    // código a ejecutar si no hay coincidencia
+}</code></pre>
+</section>
+
+<section id="html-css">
+    <h2>HTML y CSS</h2>
+    <p>HTML (HyperText Markup Language) y CSS (Cascading Style Sheets) son los pilares fundamentales del desarrollo web. HTML es el lenguaje de marcado que estructura el contenido de las páginas web, mientras que CSS es el lenguaje que se utiliza para describir su presentación. Esta presentación proporciona una visión detallada de cómo funcionan HTML y CSS, y cómo se utilizan para crear y diseñar páginas web.</p>
+</section>
+
+<section id="html">
+    <h2>HTML: Estructura y Marcado de Páginas Web</h2>
+
+    <h3 id="que-es-html">¿Qué es HTML?</h3>
+    <p>HTML (HyperText Markup Language) permite crear enlaces (hipervínculos) que permiten a los visitantes navegar de una página a otra de manera rápida y fácil. Una lengua de marcado permite anotar texto, y estas anotaciones proporcionan significado adicional al contenido de un documento. Al agregar código alrededor del texto original que queremos mostrar, el navegador utiliza este código para mostrar la página correctamente. Estos códigos son las etiquetas de marcado (tags).</p>
+
+    <h3 id="estructura">Cómo Utilizan las Páginas la Estructura</h3>
+    <p>La estructura es crucial en cualquier documento, ya que ayuda a los lectores a entender el mensaje y a navegar por el contenido. En las páginas web, esto se logra mediante el uso de diferentes etiquetas HTML que organizan y estructuran el contenido de manera lógica y coherente.</p>
+    <p>Ejemplo de estructura de un artículo:</p>
+    <ul>
+        <li>Título (headline)</li>
+        <li>Texto (body)</li>
+        <li>Imágenes (images)</li>
+        <li>Subtítulos (subheadings)</li>
+        <li>Citas (quotes)</li>
+    </ul>
+
+    <h3 id="etiquetas">Etiquetas (Tags)</h3>
+    <p>Las etiquetas HTML son los componentes básicos de las páginas web. Cada etiqueta proporciona una indicación al navegador sobre cómo debe presentarse o comportarse un elemento específico en la página.</p>
+
+    <h3 id="elementos-principales">Elementos Principales: &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;title&gt;</h3>
+    <ul>
+        <li><strong>&lt;html&gt;</strong>: La etiqueta raíz que encierra todo el contenido HTML.</li>
+        <li><strong>&lt;head&gt;</strong>: Contiene metadatos sobre el documento, como su título (&lt;title&gt;) y enlaces a hojas de estilo CSS.</li>
+        <li><strong>&lt;body&gt;</strong>: Contiene el contenido visible de la página web.</li>
+    </ul>
+    <p>Ejemplo básico de estructura HTML:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Mi Primera Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Bienvenidos a mi sitio web&lt;/h1&gt;
+  &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h3 id="encabezados">Encabezados: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, ...</h3>
+    <p>HTML tiene seis niveles de encabezados que se utilizan para definir la jerarquía del contenido, desde el más importante (&lt;h1&gt;) hasta el menos importante (&lt;h6&gt;).</p>
+    <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Sección&lt;/h3&gt;
+</code></pre>
+
+    <h3 id="parrafos-negrita">Párrafos y Texto en Negrita: &lt;p&gt;, &lt;b&gt;</h3>
+    <ul>
+        <li><strong>&lt;p&gt;</strong>: Define un párrafo.</li>
+        <li><strong>&lt;b&gt;</strong>: Hace que el texto aparezca en negrita.</li>
+    </ul>
+    <pre><code>&lt;p&gt;Este es un párrafo. &lt;b&gt;Este texto está en negrita.&lt;/b&gt;&lt;/p&gt;
+</code></pre>
+
+    <h3 id="saltos-linea">Saltos de Línea y Reglas Horizontales: &lt;br&gt;, &lt;hr&gt;</h3>
+    <ul>
+        <li><strong>&lt;br&gt;</strong>: Añade un salto de línea.</li>
+        <li><strong>&lt;hr&gt;</strong>: Añade una línea horizontal para separar secciones.</li>
+    </ul>
+    <pre><code>&lt;p&gt;Línea 1&lt;br&gt;Línea 2&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Nueva sección&lt;/p&gt;
+</code></pre>
+
+    <h3 id="listas">Listas: Ordenadas, Desordenadas y de Definición</h3>
+    <ul>
+        <li><strong>Listas Ordenadas (&lt;ol&gt;)</strong>: Los elementos de la lista están numerados.</li>
+        <li><strong>Listas Desordenadas (&lt;ul&gt;)</strong>: Los elementos de la lista están marcados con viñetas.</li>
+        <li><strong>Listas de Definición (&lt;dl&gt;)</strong>: Contienen términos y sus definiciones.</li>
+    </ul>
+    <pre><code>&lt;ol&gt;
+  &lt;li&gt;Primer elemento&lt;/li&gt;
+  &lt;li&gt;Segundo elemento&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Elemento de lista&lt;/li&gt;
+  &lt;li&gt;Otro elemento&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Término 1&lt;/dt&gt;
+  &lt;dd&gt;Definición 1&lt;/dd&gt;
+  &lt;dt&gt;Término 2&lt;/dt&gt;
+  &lt;dd&gt;Definición 2&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+    <h3 id="enlaces">Enlaces: &lt;a&gt;</h3>
+    <p>Los enlaces permiten la navegación entre páginas. Se crean utilizando la etiqueta &lt;a&gt; y el atributo `href`.</p>
+    <p>Ejemplo de enlace absoluto:</p>
+    <pre><code>&lt;a href="https://www.example.com"&gt;Visita Ejemplo&lt;/a&gt;
+</code></pre>
+    <p>Ejemplo de enlace relativo:</p>
+    <pre><code>&lt;a href="/pagina-interna.html"&gt;Página Interna&lt;/a&gt;
+</code></pre>
+
+    <h3 id="identificadores-anclas">Identificadores y Anclas: `id` y enlaces internos</h3>
+    <p>Para enlazar a una parte específica de una página, se usa el atributo `id` en el elemento destino.</p>
+    <pre><code>&lt;h1 id="titulo1"&gt;Título 1&lt;/h1&gt;
+&lt;a href="#titulo1"&gt;Ir a Título 1&lt;/a&gt;
+</code></pre>
+
+    <h3 id="imagenes">Imágenes: &lt;img&gt;</h3>
+    <p>Las imágenes se insertan usando la etiqueta &lt;img&gt; y los atributos `src`, `alt`, `width` y `height`.</p>
+    <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen" width="200" height="100"&gt;
+</code></pre>
+</section>
+
+<section id="css">
+    <h2>CSS: Diseño y Estilo de Páginas Web</h2>
+
+    <h3 id="introduccion-css">Introducción a CSS</h3>
+    <p>CSS (Cascading Style Sheets) se utiliza para controlar la presentación de los elementos HTML. Permite definir estilos para elementos específicos o aplicar reglas a múltiples elementos de manera consistente.</p>
+
+    <h3 id="caja-css">Concepto de Caja en CSS</h3>
+    <p>Cada elemento HTML se puede imaginar como una caja que contiene contenido y tiene propiedades de presentación como margen, borde, relleno y contenido.</p>
+
+    <h3 id="css-externo">Uso de CSS Externo</h3>
+    <p>Para separar la estructura (HTML) de la presentación (CSS), se utilizan archivos CSS externos, enlazados en el &lt;head&gt; del documento HTML.</p>
+    <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+&lt;/head&gt;
+</code></pre>
+
+    <h3 id="propiedades-css">Propiedades CSS</h3>
+    <p>Algunas propiedades comunes de CSS incluyen:</p>
+    <ul>
+        <li><strong>display</strong>: Define cómo se debe mostrar un elemento (`block`, `inline`, `flex`).</li>
+        <li><strong>flex-direction</strong>: Establece la dirección del eje principal (`row`, `column`).</li>
+        <li><strong>justify-content</strong>: Alinea los elementos a lo largo del eje principal (`center`, `flex-start`, `flex-end`).</li>
+        <li><strong>align-items</strong>: Alinea los elementos a lo largo del eje transversal (`center`, `stretch`).</li>
+        <li><strong>font-family</strong>: Define la fuente del texto.</li>
+        <li><strong>text-align</strong>: Alinea el texto (`left`, `right`, `center`).</li>
+        <li><strong>padding</strong>: Define el espacio interior alrededor del contenido de un elemento.</li>
+    </ul>
+    <pre><code>body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Serif Pro', serif;
+  text-align: center;
+  padding: 5px 20% 0 20%;
+}
+</code></pre>
+</section>
+
+<section id="estructura-programas">
+    <h2>Estructura de Programas en JavaScript</h2>
+    <p>JavaScript es un lenguaje de programación fundamental para el desarrollo web, y entender su estructura es esencial para crear aplicaciones eficaces. Esta presentación aborda conceptos clave como bindings (variables), flujo de control y bucles (loops).</p>
+</section>
+
+<section id="bindings-variables">
+    <h2>Bindings o Variables</h2>
+
+    <h3 id="que-es-binding">¿Qué es un Binding?</h3>
+    <p>Un binding (o variable) en JavaScript es una forma de almacenar y manipular datos. Permite que un programa recuerde valores y estados internos. Los bindings se crean usando palabras clave como `let`, `const` y `var`. Aquí nos centraremos en `let`.</p>
+    <p>Ejemplo básico:</p>
+    <pre><code>let op = 5 * 5;</code></pre>
+    <p>En este caso, `let` indica que estamos definiendo un binding llamado `op` y le asignamos el valor `25`.</p>
+
+    <h3 id="uso-actualizacion">Uso y Actualización de Bindings</h3>
+    <p>Una vez definido un binding, podemos usar su nombre para referirnos al valor que almacena. Los bindings no están vinculados permanentemente a un valor y se pueden actualizar.</p>
+    <p>Ejemplo:</p>
+    <pre><code>let ten = 10;
+console.log(ten * ten);  // 100</code></pre>
+    <p>Actualizar un binding:</p>
+    <pre><code>let mood = "light";
+console.log(mood);  // "light"
+
+mood = "dark";
+console.log(mood);  // "dark"</code></pre>
+    <p>Ejemplo de actualización basada en un cálculo:</p>
+    <pre><code>let luigisDebt = 140;
+luigisDebt = luigisDebt - 35;
+console.log(luigisDebt);  // 105</code></pre>
+</section>
+
+<section id="flujo-control">
+    <h2>Flujo de Control</h2>
+    <p>Cuando un programa tiene múltiples declaraciones, estas se ejecutan secuencialmente, de arriba hacia abajo, similar a leer una historia.</p>
+
+    <h3 id="ejecucion-condicional">Ejecución Condicional</h3>
+    <p>A veces, necesitamos que el programa tome decisiones basadas en ciertas condiciones. Esto se logra con la declaración `if`.</p>
+    <p>Ejemplo:</p>
+    <pre><code>let number = prompt("Enter a number:");
+if (number > 0) {
+  console.log("The number is positive.");
+}</code></pre>
+</section>
+
+<section id="bucles">
+    <h2>Bucles (Loops)</h2>
+    <p>Los bucles permiten repetir un bloque de código múltiples veces. Esto es útil para realizar tareas repetitivas sin tener que escribir el mismo código varias veces.</p>
+
+    <h3 id="while-loops">While Loops</h3>
+    <p>Un `while` loop repite un bloque de código mientras una condición sea verdadera.</p>
+    <p>Ejemplo de imprimir números pares de 0 a 12:</p>
+    <pre><code>let number = 0;
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
+}</code></pre>
+
+    <h3 id="for-loops">For Loops</h3>
+    <p>Un `for` loop es una forma más compacta de repetir código. Es útil cuando sabemos de antemano cuántas veces queremos repetir el bloque.</p>
+    <p>Ejemplo de calcular \(2^{10}\):</p>
+    <pre><code>let result = 1;
+for (let counter = 0; counter < 10; counter = counter + 1) {
+  result = result * 2;
+}
+console.log(result);  // 1024</code></pre>
+</section>
+
+<section id="switch">
+    <h2>Switch</h2>
+    <p>La declaración `switch` se utiliza para evaluar una expresión y ejecutar diferentes bloques de código basados en el valor de la expresión.</p>
+    <p>Ejemplo:</p>
+    <pre><code>let day = "Monday";
+switch (day) {
+  case "Monday":
+    console.log("Start of the work week");
+    break;
+  case "Wednesday":
+    console.log("Midweek");
+    break;
+  case "Friday":
+    console.log("End of the work week");
+    break;
+  default:
+    console.log("Another day");
+    break;
+}</code></pre>
+</section>
+
+<section id="react-hooks-jsx">
+    <h2>React, Hooks, y JSX</h2>
+    <p>React es una biblioteca de JavaScript para construir interfaces de usuario tanto en aplicaciones web como en móviles. Se basa en componentes, que son piezas reutilizables de código que representan partes de la interfaz de usuario. En esta presentación, cubriremos los conceptos clave de React, incluidos los hooks, JSX, estructuras de datos como objetos y arreglos, y métodos.</p>
+</section>
+
+<section id="estructuras-datos">
+    <h2>Estructuras de Datos: Objetos y Arreglos</h2>
+
+    <h3 id="arreglos">Arreglos (Arrays)</h3>
+    <p>Los números, booleanos y cadenas de texto son los componentes básicos de las estructuras de datos. Para trabajar con conjuntos de datos, los arreglos (arrays) y objetos son fundamentales.</p>
+    <p>Ejemplo de arreglo:</p>
+    <pre><code>let listOfNumbers = [2, 3, 5, 7, 11];
+
+console.log(listOfNumbers[2]);  // 5
+console.log(listOfNumbers[0]);  // 2
+console.log(listOfNumbers[2 - 1]);  // 3
+</code></pre>
+
+    <h3 id="metodos-arreglos">Métodos de Arreglos</h3>
+    <p>Los arreglos en JavaScript tienen varios métodos útiles que permiten manipular y trabajar con los datos de manera eficiente.</p>
+    <p>Ejemplo de métodos:</p>
+    <pre><code>let sequence = [1, 2, 3];
+sequence.push(4);  // Añade 4 al final
+sequence.push(5);  // Añade 5 al final
+
+console.log(sequence);  // [1, 2, 3, 4, 5]
+console.log(sequence.pop());  // Elimina y devuelve el último elemento (5)
+console.log(sequence);  // [1, 2, 3, 4]
+</code></pre>
+
+    <h3 id="objetos">Objetos (Objects)</h3>
+    <p>Los objetos son colecciones de pares clave-valor y permiten almacenar datos más complejos.</p>
+    <p>Ejemplo de objeto:</p>
+    <pre><code>let anObject = { left: 1, right: 2 };
+console.log(anObject.left);  // 1
+
+delete anObject.left;
+console.log(anObject.left);  // undefined
+
+console.log("left" in anObject);  // false
+console.log("right" in anObject);  // true
+</code></pre>
+    <p>Para obtener las claves de un objeto:</p>
+    <pre><code>console.log(Object.keys({ x: 0, y: 0, z: 2 }));  // ["x", "y", "z"]
+</code></pre>
+</section>
+
+<section id="react">
+    <h2>React</h2>
+    <p>React permite construir interfaces de usuario mediante componentes individuales que se pueden combinar en pantallas, páginas y aplicaciones completas.</p>
+
+    <h3 id="componentes">Componentes</h3>
+    <p>Los componentes en React son funciones de JavaScript que pueden recibir propiedades (`props`) y devolver elementos de React que describen lo que se debe mostrar en la pantalla.</p>
+    <p>Ejemplo de componente:</p>
+    <pre><code>function Video({ video }) {
+  return (
+    &lt;div&gt;
+      &lt;Thumbnail video={video} /&gt;
+      &lt;a href={video.url}&gt;
+        &lt;h3&gt;{video.title}&lt;/h3&gt;
+        &lt;p&gt;{video.description}&lt;/p&gt;
+      &lt;/a&gt;
+      &lt;LikeButton video={video} /&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+
+    <h3 id="jsx">JSX</h3>
+    <p>JSX es una extensión de la sintaxis de JavaScript que permite escribir elementos de React utilizando una sintaxis similar a HTML. Se traduce a llamadas de funciones de JavaScript que crean elementos de React.</p>
+    <p>Ejemplo de JSX:</p>
+    <pre><code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+</code></pre>
+
+    <h3 id="listas-condicionales">Listas y Condicionales</h3>
+    <p>Para mostrar contenido condicionalmente, se puede usar una declaración `if`. Para mostrar listas, se puede usar el método `map` de los arreglos.</p>
+    <p>Ejemplo de componente que muestra una lista:</p>
+    <pre><code>function VideoList({ videos, emptyHeading }) {
+  const count = videos.length;
+  let heading = emptyHeading;
+  if (count > 0) {
+    const noun = count > 1 ? 'Videos' : 'Video';
+    heading = count + ' ' + noun;
+  }
+  return (
+    &lt;section&gt;
+      &lt;h2&gt;{heading}&lt;/h2&gt;
+      {videos.map(video =&gt;
+        &lt;Video key={video.id} video={video} /&gt;
+      )}
+    &lt;/section&gt;
+  );
+}
+</code></pre>
+</section>
+
+<section id="hooks">
+    <h2>Hooks</h2>
+    <p>Los hooks permiten utilizar características de React, como el estado y los efectos, dentro de componentes funcionales. Hay hooks integrados que se pueden usar y también se pueden crear hooks personalizados.</p>
+
+    <h3 id="usestate">Hook de Estado: `useState`</h3>
+    <p>El hook `useState` permite añadir estado a un componente funcional. Proporciona una variable de estado y una función para actualizarla.</p>
+    <p>Ejemplo de `useState`:</p>
+    <pre><code>const [index, setIndex] = useState(0);
+
+function handleClick() {
+  setIndex(index + 1);
+}
+</code></pre>
+
+    <h3 id="useeffect">Hook de Efecto: `useEffect`</h3>
+    <p>El hook `useEffect` permite realizar efectos secundarios en los componentes, como conectar con APIs externas, suscribirse a eventos, o manipular el DOM.</p>
+    <p>Ejemplo de `useEffect`:</p>
+    <pre><code>import { useEffect, useState } from 'react';
+import { createConnection } from './chat.js';
+
+function ChatRoom({ roomId }) {
+  const [serverUrl, setServerUrl] = useState('https://localhost:1234');
+
+  useEffect(() => {
+    const connection = createConnection(serverUrl, roomId);
+    connection.connect();
+    return () => {
+      connection.disconnect();
+    };
+  }, [serverUrl, roomId]);
+}
+</code></pre>
+</section>
+
+<section id="rutas-fetch-http-urls">
+    <h2>Rutas, Fetch, Métodos HTTP y Anatomía de URLs</h2>
+    <p>En esta presentación, exploraremos cómo manejar rutas, realizar solicitudes HTTP utilizando la API Fetch, y los diferentes métodos HTTP (GET, POST, PUT, DELETE, etc.) en el contexto del desarrollo web con React. También desglosaremos la anatomía de una URL para entender mejor su estructura y componentes.</p>
+</section>
+
+<section id="fetch">
+    <h2>Fetch</h2>
+    <p>Fetch es una API basada en promesas que permite realizar solicitudes HTTP asíncronas en JavaScript. Es una alternativa mejorada que se integra con conceptos avanzados de HTTP, como CORS (Cross-Origin Resource Sharing).</p>
+
+    <h3 id="uso-basico-fetch">Uso Básico de Fetch</h3>
+    <p>Fetch se usa para hacer solicitudes HTTP y manejar las respuestas de manera asíncrona. Aquí hay un ejemplo básico:</p>
+    <pre><code>async function logMovies() {
+  const response = await fetch("http://example.com/movies.json");
+  const movies = await response.json();
+  console.log(movies);
+}
+</code></pre>
+    <p>En este ejemplo, `fetch` hace una solicitud GET a la URL proporcionada, y el método `response.json()` se usa para convertir la respuesta en un objeto JavaScript.</p>
+
+    <h3 id="opciones-solicitud">Opciones de Solicitud</h3>
+    <p>El método `fetch` puede aceptar un segundo parámetro opcional, un objeto de configuración (init), que permite controlar diversas configuraciones de la solicitud.</p>
+    <p>Ejemplo de uso de `POST`:</p>
+    <pre><code>async function postData(url = "", data = {}) {
+  const response = await fetch(url, {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data), // Los datos deben coincidir con el tipo de contenido
+  });
+  return response.json(); // Convierte la respuesta en un objeto JavaScript
+}
+</code></pre>
+</section>
+
+<section id="metodos-http">
+    <h2>Métodos HTTP</h2>
+    <p>Cada método HTTP tiene un propósito específico en la interacción con un servidor:</p>
+
+    <h3 id="get">GET</h3>
+    <p>El método GET se utiliza para recuperar datos del servidor. No incluye un cuerpo de solicitud.</p>
+    <p>Ejemplo:</p>
+    <pre><code>fetch('/products')
+  .then(response => response.json())
+  .then(data => console.log(data));
+</code></pre>
+
+    <h3 id="post">POST</h3>
+    <p>El método POST se utiliza para crear nuevos recursos. Incluye un cuerpo de solicitud con los datos del nuevo recurso.</p>
+    <p>Ejemplo:</p>
+    <pre><code>fetch('/products', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    name: 'New Product',
+    price: 100
+  }),
+})
+.then(response => response.json())
+.then(data => console.log(data));
+</code></pre>
+
+    <h3 id="put">PUT</h3>
+    <p>El método PUT se utiliza para reemplazar un recurso existente con una nueva versión.</p>
+    <p>Ejemplo:</p>
+    <pre><code>fetch('/products/123', {
+  method: 'PUT',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    name: 'Updated Product',
+    price: 120
+  }),
+})
+.then(response => response.json())
+.then(data => console.log(data));
+</code></pre>
+
+    <h3 id="patch">PATCH</h3>
+    <p>El método PATCH se utiliza para actualizar propiedades específicas de un recurso sin sobrescribirlo por completo.</p>
+    <p>Ejemplo:</p>
+    <pre><code>fetch('/products/123', {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    price: 130
+  }),
+})
+.then(response => response.json())
+.then(data => console.log(data));
+</code></pre>
+
+    <h3 id="delete">DELETE</h3>
+    <p>El método DELETE se utiliza para eliminar un recurso del servidor.</p>
+    <p>Ejemplo:</p>
+    <pre><code>fetch('/products/123', {
+  method: 'DELETE',
+})
+.then(response => response.json())
+.then(data => console.log(data));
+</code></pre>
+</section>
+
+<section id="anatomia-urls">
+    <h2>Anatomía de URLs</h2>
+    <p>Una URL (Uniform Resource Locator) es la dirección que utilizamos para acceder a recursos en la web. Comprender su estructura es esencial para construir rutas y manejar solicitudes HTTP.</p>
+
+    <h3 id="estructura-url">Estructura de una URL</h3>
+    <p>Una URL típica se compone de varios componentes:</p>
+    <pre><code>https://www.example.com:8080/path/to/resource?query=param#fragment
+</code></pre>
+    <ul>
+        <li><strong>Protocolo (`https://`)</strong>: Indica el protocolo utilizado (HTTP, HTTPS, FTP, etc.).</li>
+        <li><strong>Nombre del dominio (`www.example.com`)</strong>: El nombre del servidor donde reside el recurso.</li>
+        <li><strong>Puerto (`:8080`)</strong>: El puerto del servidor (opcional, por defecto es 80 para HTTP y 443 para HTTPS).</li>
+        <li><strong>Ruta (`/path/to/resource`)</strong>: La ruta al recurso específico en el servidor.</li>
+        <li><strong>Consulta (`?query=param`)</strong>: Una cadena de consulta que envía datos adicionales al servidor.</li>
+        <li><strong>Fragmento (`#fragment`)</strong>: Una referencia a una parte específica del recurso.</li>
+    </ul>
+</section>
+
+<section id="rutas-react">
+    <h2>Rutas en React</h2>
+    <p>React Router es una biblioteca estándar para manejar el enrutamiento en aplicaciones React. Permite definir múltiples rutas y cómo se deben renderizar los componentes para cada ruta.</p>
+    <p>Ejemplo básico de configuración de rutas:</p>
+    <pre><code>import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+function App() {
+  return (
+    &lt;Router&gt;
+      &lt;Switch&gt;
+        &lt;Route exact path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Switch&gt;
+    &lt;/Router&gt;
+  );
+}
+</code></pre>
+</section>
+
+<section id="node-express">
+    <h2>Node y Express</h2>
+    <p>Node.js y Express son herramientas poderosas para desarrollar aplicaciones del lado del servidor usando JavaScript. Esta presentación cubrirá los conceptos básicos de Node.js y Express, sus ventajas, y cómo se utilizan juntos para construir aplicaciones web eficientes y escalables.</p>
+</section>
+
+<section id="nodejs">
+    <h2>Node.js</h2>
+
+    <h3 id="que-es-nodejs">¿Qué es Node.js?</h3>
+    <p>Node.js es un entorno de ejecución de JavaScript de código abierto y multiplataforma que permite a los desarrolladores crear aplicaciones y herramientas del lado del servidor. Node.js utiliza el motor V8 de Google, que compila JavaScript a código máquina, proporcionando un alto rendimiento.</p>
+
+    <h3 id="ventajas-nodejs">Ventajas de Node.js</h3>
+    <ul>
+        <li><strong>Gran rendimiento</strong>: Node.js está diseñado para optimizar el rendimiento y la escalabilidad, especialmente en aplicaciones web.</li>
+        <li><strong>JavaScript unificado</strong>: Al usar JavaScript tanto en el servidor como en el cliente, se reduce el tiempo necesario para cambiar entre lenguajes.</li>
+        <li><strong>Gestor de paquetes (NPM)</strong>: Node.js incluye NPM, que proporciona acceso a miles de paquetes reutilizables.</li>
+        <li><strong>Comunidad activa</strong>: Hay una gran comunidad de desarrolladores que contribuyen al ecosistema de Node.js.</li>
+    </ul>
+
+    <h3 id="limitaciones-nodejs">Limitaciones de Node.js</h3>
+    <p>Node.js no incluye soporte directo para muchas tareas comunes de desarrollo web, como manejar diferentes verbos HTTP, gestionar rutas o servir archivos estáticos. Para estas tareas, se utilizan frameworks como Express.</p>
+</section>
+
+<section id="expressjs">
+    <h2>Express.js</h2>
+
+    <h3 id="que-es-expressjs">¿Qué es Express.js?</h3>
+    <p>Express.js es el framework web más popular para Node.js. Simplifica el desarrollo de aplicaciones web y APIs al proporcionar una serie de características robustas para gestionar peticiones HTTP, rutas y middleware.</p>
+
+    <h3 id="caracteristicas-expressjs">Características de Express.js</h3>
+    <ul>
+        <li><strong>Manejo de peticiones HTTP</strong>: Express permite escribir manejadores de peticiones para diferentes verbos HTTP (GET, POST, DELETE, etc.) en diferentes rutas URL.</li>
+        <li><strong>Renderización de vistas</strong>: Integra con motores de plantillas para generar respuestas dinámicas.</li>
+        <li><strong>Configuración de aplicaciones</strong>: Permite establecer ajustes como el puerto de conexión y la localización de las plantillas.</li>
+        <li><strong>Middleware</strong>: Añade procesamiento adicional en cualquier punto de la cadena de manejo de peticiones.</li>
+    </ul>
+
+    <h3 id="ejemplo-basico-express">Ejemplo Básico de Express</h3>
+    <p>Instalar Express:</p>
+    <pre><code>npm install express
+</code></pre>
+    <p>Crear una aplicación básica:</p>
+    <pre><code>const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+</code></pre>
+    <p>En este ejemplo, `app.get` define una ruta para manejar las peticiones GET a la URL raíz (`/`), y `res.send` envía una respuesta al cliente. `app.listen` inicia el servidor en el puerto 3000.</p>
+
+    <h3 id="aplicaciones-dinamicas">Node.js y Express en Aplicaciones Dinámicas</h3>
+    <p>En aplicaciones web dinámicas, el servidor espera recibir peticiones HTTP del navegador o cliente. Al recibir una petición, la aplicación determina la acción adecuada basándose en la estructura de la URL y la información en la petición (métodos POST o GET).</p>
+
+    <h4>Ejemplo de Aplicación Dinámica</h4>
+    <p>Supongamos que queremos manejar peticiones para un blog con la capacidad de crear y listar publicaciones.</p>
+    <pre><code>const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+
+let posts = [];
+
+// Ruta para listar publicaciones
+app.get('/posts', (req, res) => {
+  res.json(posts);
+});
+
+// Ruta para crear una nueva publicación
+app.post('/posts', (req, res) => {
+  const post = req.body;
+  posts.push(post);
+  res.status(201).json(post);
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+</code></pre>
+    <p>Este ejemplo usa `body-parser` para parsear el cuerpo de las peticiones entrantes como JSON. La ruta `GET /posts` devuelve todas las publicaciones, mientras que la ruta `POST /posts` permite crear una nueva publicación.</p>
+</section>
+
+<section id="postgresql">
+    <h2>PostgreSQL</h2>
+    <p>Para muchas aplicaciones, es necesario interactuar con una base de datos. PostgreSQL es una opción popular.</p>
+</section>
+
+<section id="postman">
+    <h2>Postman</h2>
+    <p>Postman es una herramienta útil para probar y desarrollar APIs. Permite enviar peticiones HTTP y ver las respuestas.</p>
+</section>
+
+<section id="node-express-postgresql">
+    <h2>Node, Express y PostgreSQL</h2>
+    <p>Node.js, Express y PostgreSQL son herramientas esenciales para el desarrollo de aplicaciones web del lado del servidor. Esta presentación cubre cómo integrar estas tecnologías para crear aplicaciones web eficientes y escalables.</p>
+</section>
+
+<section id="postgresql">
+    <h2>PostgreSQL</h2>
+
+    <h3 id="que-es-postgresql">¿Qué es PostgreSQL?</h3>
+    <p>PostgreSQL, comúnmente conocido como Postgres, es un sistema de gestión de bases de datos relacional y de código abierto. Compite con otros sistemas de bases de datos como MySQL, Microsoft SQL Server y MariaDB.</p>
+
+    <h3 id="caracteristicas-postgresql">Características de PostgreSQL</h3>
+    <ul>
+        <li><strong>Código abierto y gratuito</strong>.</li>
+        <li><strong>Alta conformidad con el estándar SQL</strong>.</li>
+        <li><strong>Extensibilidad</strong>: Permite añadir nuevos tipos de datos, operadores y funciones.</li>
+        <li><strong>Soporte para transacciones ACID</strong>.</li>
+        <li><strong>Sistema robusto para la gestión de datos estructurados y no estructurados</strong>.</li>
+    </ul>
+</section>
+
+<section id="node-postgres">
+    <h2>Node-postgres (pg)</h2>
+
+    <h3 id="que-es-node-postgres">¿Qué es node-postgres?</h3>
+    <p>Node-postgres, o `pg`, es un cliente PostgreSQL no bloqueante para Node.js. Incluye una colección de módulos de Node.js para interactuar con una base de datos PostgreSQL.</p>
+
+    <h3 id="caracteristicas-node-postgres">Características de node-postgres</h3>
+    <ul>
+        <li>Soporte para callbacks, promesas y async/await.</li>
+        <li>Pooling de conexiones.</li>
+        <li>Sentencias preparadas.</li>
+        <li>Cursors y análisis de tipos ricos.</li>
+        <li>Enlaces C/C++.</li>
+    </ul>
+
+    <h3 id="uso-terminal-psql">Uso del terminal de PostgreSQL (psql)</h3>
+    <p>El terminal interactivo `psql` permite interactuar con PostgreSQL desde la línea de comandos.</p>
+
+    <h4>Comandos comunes de psql</h4>
+    <ul>
+        <li><strong>\q</strong>: Salir de la conexión `psql`.</li>
+        <li><strong>\c</strong>: Conectarse a una nueva base de datos.</li>
+        <li><strong>\dt</strong>: Listar todas las tablas.</li>
+        <li><strong>\du</strong>: Listar todos los roles.</li>
+        <li><strong>\list</strong>: Listar todas las bases de datos.</li>
+    </ul>
+    <p>Ejemplo de conexión:</p>
+    <pre><code>psql -d postgres -U catedratec
+</code></pre>
+</section>
+
+<section id="configuracion-postgresql">
+    <h2>Configuración de PostgreSQL</h2>
+
+    <h3 id="crear-rol">Crear un rol en PostgreSQL</h3>
+    <pre><code>CREATE ROLE catedratec WITH LOGIN PASSWORD 'password';
+ALTER ROLE catedratec CREATEDB;
+</code></pre>
+
+    <h3 id="crear-base-datos">Crear una base de datos</h3>
+    <pre><code>CREATE DATABASE catedraapi;
+</code></pre>
+
+    <h3 id="crear-tabla">Crear una tabla</h3>
+    <pre><code>CREATE TABLE users (
+  ID SERIAL PRIMARY KEY,
+  name VARCHAR(30),
+  email VARCHAR(30)
+);
+</code></pre>
+
+    <h3 id="insertar-datos">Insertar datos en la tabla</h3>
+    <pre><code>INSERT INTO users (name, email)
+  VALUES ('David', 'david@gmail.com'), ('Frida', 'frida@gmail.com');
+</code></pre>
+</section>
+
+<section id="servidor-express">
+    <h2>Configuración de un servidor Express</h2>
+
+    <h3 id="instalacion-dependencias">Instalación de dependencias</h3>
+    <p>Primero, instalamos Express y los módulos necesarios:</p>
+    <pre><code>npm install express body-parser pg
+</code></pre>
+
+    <h3 id="configuracion-basica">Configuración básica del servidor Express</h3>
+    <p>Creamos un archivo `server.js` y configuramos el servidor Express:</p>
+    <pre><code>const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
+const port = 3000
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.listen(port, () => {
+  console.log(`App running on port ${port}.`)
+})
+</code></pre>
+
+    <h3 id="conexion-postgresql">Conexión a PostgreSQL con node-postgres</h3>
+    <p>Configuramos la conexión a PostgreSQL:</p>
+    <pre><code>const Pool = require('pg').Pool
+const pool = new Pool({
+  user: 'catedratec',
+  host: 'localhost',
+  database: 'catedraapi',
+  password: 'password',
+  port: 5432,
+})
+</code></pre>
+
+    <h3 id="rutas-controladores">Rutas y controladores en Express</h3>
+    <p>Definimos rutas para obtener todos los usuarios y obtener un usuario por ID:</p>
+    <pre><code>const getUsers = (request, response) => {
+  pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
+    if (error) {
+      throw error
+    }
+    response.status(200).json(results.rows)
+  })
+}
+
+const getUserById = (request, response) => {
+  const id = parseInt(request.params.id)
+
+  pool.query('SELECT * FROM users WHERE id = $1', [id], (error, results) => {
+    if (error) {
+      throw error
+    }
+    response.status(200).json(results.rows)
+  })
+}
+
+app.get('/users', getUsers)
+app.get('/users/:id', getUserById)
+</code></pre>
+</section>
+
+</body>
+</html>
